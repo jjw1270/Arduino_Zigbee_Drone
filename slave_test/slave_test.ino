@@ -15,15 +15,6 @@ void loop() {
   if (Serial.available()){
     //Read the incoming byte
     char IN = Serial.read();
-    Serial.write(IN);
-    //Start the message when the '<' symbol is received
-    if(IN == 'A')
-    {
-      digitalWrite(ledPin, HIGH);
-    }
-    if(IN == 'B')
-    {
-      digitalWrite(ledPin, LOW);
-    }
+    Serial.print(IN);
   }
 }
