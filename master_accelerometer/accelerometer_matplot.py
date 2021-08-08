@@ -26,7 +26,7 @@ class Arrow3D(FancyArrowPatch):
 
 fig = plt.figure()
 ax = fig.gca(projection = '3d')
-ax.set_aspect("equal")
+#ax.set_aspect("equal")
 
 ax.scatter([0],[0],[0],color="black",s=5)
 u, v = np.mgrid[0:2*np.pi:20j, 0:np.pi:10j]
